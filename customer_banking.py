@@ -8,8 +8,15 @@ def main():
     and the length of months to determine the interest gained.
     It displays the interest earned on the savings and CD accounts and updates the balances.
     """
+    
+    # Prompt the user to enter the savings accounts details 
+    account_number = input('Enter your account number: ')
+    account_holder_name = input ('Enter your name: ')
+
     # Prompt the user to set the savings balance, interest rate, and months for the savings account.
-    # ADD YOUR CODE HERE
+    savings_balance = float(input('Enter the savings account balance: '))
+    savings_interest_rate = float(input('Enter the savings account interest rate (in decimal form): '))
+    savings_month = int(input('Enter the number of months for the savings account: '))
 
     # Call the create_savings_account function and pass the variables from the user.
     updated_savings_balance, interest_earned = create_savings_account(savings_balance, savings_interest, savings_maturity)
@@ -26,5 +33,6 @@ def main():
     # Print out the interest earned and updated CD account balance with interest earned for the given months.
     # ADD YOUR CODE HERE
 
-if __name__ == "__main__":
+
     # Call the main function.
+    if __name__ == "main__":
